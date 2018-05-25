@@ -1,0 +1,69 @@
+@import "../../global";
+
+
+.topicList {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  li {
+    border-bottom: solid 1px $topic-list-border;
+    list-style-type: none;
+    position: relative;
+    a {
+      display: block;
+      padding: 8px 0 8px 8px;
+
+      &:hover {
+        background-color: $topic-list-link-hover;
+      }
+    }
+
+  }
+}
+
+.topicEntryList {
+  padding: 10px 0;
+}
+
+.topicListHeader {
+  background: $topic-list-header-background;
+  font-size: 16px;
+  padding: 8px 0 8px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  p {
+    margin: 0
+  }
+
+}
+
+
+.refreshTopicList {
+  margin: 0 10px;
+  position: relative;
+  top: 3px;
+  path {
+    fill: $refresh-topic-list-color;
+  }
+}
+
+
+.titleCount {
+  font-size: 13px;
+  margin: 4px 2px 0 0;
+  opacity: 0.6;
+}
+
+.readCount {
+  font-size: 11px;
+  bottom: 0;
+  display: inline-block;
+  border-radius: 50%;
+  min-width: 18px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  opacity: 0.6;
+}
+

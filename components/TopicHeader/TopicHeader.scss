@@ -1,0 +1,30 @@
+@import "../../global";
+
+
+.topicTitle {
+  font-size: 25px;
+  margin-bottom: 10px;;
+}
+
+.topicToolboxTop {
+  margin-bottom: 20px;
+  font-size: 13px !important;
+
+  :global{
+    .btn-group{
+      .btn {
+        color: $topic-toolbox-btn-color;
+        background-color: $topic-toolbox-btn-background;
+        border-color:$topic-toolbox-btn-border-color;
+        font-size: 13px;
+      }
+      .dropdown {
+        margin-right: 5px;
+      }
+
+      .dropdown-item {
+        font-size: 14px;
+      }
+    }
+  }
+}

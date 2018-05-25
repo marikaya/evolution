@@ -1,0 +1,115 @@
+@import "../../global";
+
+.header {
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.topSearchForm {
+  margin-left: 35px;
+}
+
+.topSearch {
+  outline: none;
+  background-color: $search-box-background;
+  color: $input-color;
+  font-family: 'LatoLatinWeb', sans-serif;
+  border: $input-border-color;
+  font-weight: bold;
+  min-width: 400px;
+  padding: .65rem;
+  margin-right: 10px;
+  box-shadow: none;
+  transition: background-color 0.3s;
+  &:hover, &:active, &:focus{
+    outline: none;
+    transition: background-color 0.3s;
+    box-shadow: none;
+    background-color: $search-box-hover;
+  }
+}
+
+
+.kulzosLogo {
+  opacity: 0.9;
+  transition: 0.3s;
+  width: 90px;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.kulzosPath {
+  fill: $logo-color;
+}
+
+
+
+
+.mainNavbar {
+  background-color: $navbar-background-color;
+}
+
+.navbarBrand {
+  margin-right: 125px;
+}
+
+
+.navbarSearchBtn {
+  .btn {
+    padding: 0.40rem;
+    min-width: 50px;
+  }
+  svg {
+    top: 3px;
+    position: relative;
+  }
+}
+
+  .navbarBrand {
+    font-size: inherit;
+    padding: 0;
+  }
+
+  .headerSearchIcon {
+    font-size: 20px;
+    background-color: $search-icon-background;
+  }
+
+  .headerUserBar {
+     .navbarLink {
+       font-size: 22px;
+       margin-left: 20px;
+       color: $navbar-link-color;
+       top: 3px;
+       position: relative;
+
+       &::after{
+         border: none;
+         margin: 0;
+       }
+     }
+     li {
+       position: relative;
+     }
+  }
+
+  .notificationCount {
+    background: $notification-background;
+    color: $notification-color;
+    border-radius: 50%;
+    height: 20px;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 900;
+    width: 21px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 1px;
+    border: solid 2px $navbar-background-color;
+    top: -3px;
+    z-index: 1;
+  }
+
